@@ -1,0 +1,38 @@
+html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Plantação</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cálculo de Plantação</h1>
+        
+        <div class="input-group">
+            <label for="tipoPlanta">Tipo de Planta:</label>
+            <select id="tipoPlanta">
+                <option value="" disabled selected>Escolha uma planta</option>
+                <option value="tomate">Tomate</option>
+                <option value="alface">Alface</option>
+                <option value="cenoura">Cenoura</option>
+                <option value="feijao">Feijão</option>
+                <option value="milho">Milho</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="dias">Dias para Crescer:</label>
+            <input type="number" id="dias" placeholder="Insira os dias">
+        </div>
+
+        <button id="calcular">Calcular</button>
+
+        <h2 id="resultado"></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
